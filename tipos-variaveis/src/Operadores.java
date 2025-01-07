@@ -42,7 +42,7 @@ public class Operadores {
         System.out.println(!teste);
         System.out.println(teste);
 
-        int numero1 = 1, numero2 = 1;
+        int numero1 = 1, numero2 = 2;
         boolean num = numero1 == numero2;
 
         if(num){
@@ -50,6 +50,23 @@ public class Operadores {
         }
         else{
             System.out.println("Numero 1 não é igual numero 2");
+        }
+
+        boolean condicao1= true;
+        boolean condicao2= true;
+
+        if((condicao1 == condicao2) && (num = false)){
+            System.out.println("Tudo verdadeiro");
+        }
+        else{
+            System.out.println("Uma ou mais condições falsas");
+        }
+
+        if((condicao1 == condicao2) || (num = false)){
+            System.out.println("Tudo verdadeiro");
+        }
+        else{
+            System.out.println("Uma ou mais condições falsas");
         }
     }
     
